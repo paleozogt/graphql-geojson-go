@@ -1,0 +1,12 @@
+scalar Feature
+scalar FeatureCollection
+
+type Query {
+  feature: Feature!
+  featureCollection: FeatureCollection!
+}
+
+type Mutation {
+  setFeature(feature:Feature!): Feature!
+  setFeatureCollection(featureCollection:FeatureCollection!):FeatureCollection!
+}
